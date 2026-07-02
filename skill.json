@@ -1,0 +1,45 @@
+{
+  "name": "brand-voice-consistency-skill",
+  "version": "1.0.0",
+  "description": "Audit and enforce brand voice consistency across marketing copy. Scores tone alignment, detects prohibited phrases, flags inconsistencies, and suggests rewrites.",
+  "author": "alphaparkinc",
+  "category": "content",
+  "tags": [
+    "brand-voice",
+    "content",
+    "consistency",
+    "copywriting",
+    "audit"
+  ],
+  "inputs": {
+    "brand_profile": {
+      "type": "object",
+      "description": "Brand voice profile with tone, values, prohibited_words, preferred_words, and persona."
+    },
+    "content_pieces": {
+      "type": "array",
+      "description": "List of content strings to audit."
+    },
+    "strict_mode": {
+      "type": "boolean",
+      "description": "If true, flags any deviation from the brand profile.",
+      "default": false
+    }
+  },
+  "outputs": {
+    "audit_results": {
+      "type": "array",
+      "description": "Per-piece audit with consistency score, issues found, and rewrite suggestions."
+    },
+    "overall_score": {
+      "type": "number",
+      "description": "Average consistency score across all content pieces."
+    },
+    "critical_issues": {
+      "type": "array",
+      "description": "High-priority brand voice violations."
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
