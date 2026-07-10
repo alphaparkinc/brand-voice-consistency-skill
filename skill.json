@@ -1,8 +1,8 @@
 {
   "name": "brand-voice-consistency-skill",
   "version": "1.0.0",
-  "description": "Audit and enforce brand voice consistency across marketing copy. Scores tone alignment, detects prohibited phrases, flags inconsistencies, and suggests rewrites.",
-  "author": "alphaparkinc",
+  "description": "GenPark AI Agent Skill - Audit and enforce brand voice consistency across marketing copy. Scores tone alignment, detects prohibited phrases, flags inconsistencies, and suggests rewrites.",
+  "author": "genpark",
   "category": "content",
   "tags": [
     "brand-voice",
